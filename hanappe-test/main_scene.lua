@@ -1,31 +1,27 @@
 module(..., package.seeall)
 
+
 --------------------------------------------------------------------------------
 -- Requires
 --------------------------------------------------------------------------------
-
 local FpsMonitor = require "hp/util/FpsMonitor"
 local Component = require "hp/gui/Component"
 
---------------------------------------------------------------------------------
--- Constraints
---------------------------------------------------------------------------------
 
+--------------------------------------------------------------------------------
+-- Variables
+--------------------------------------------------------------------------------
 local SCENE_ITEMS = {
     {text = "scene1",           scene = "scenes/scene1",        animation = "slideToLeft"},
     {text = "scene2",           scene = "scenes/scene2",        animation = "slideToLeft"},
 }
 
---------------------------------------------------------------------------------
--- Variables
---------------------------------------------------------------------------------
-
 local fpsMonitor = FpsMonitor(10)
 
---------------------------------------------------------------------------------
--- Event Handler
---------------------------------------------------------------------------------
 
+--------------------------------------------------------------------------------
+-- Event Handlers
+--------------------------------------------------------------------------------
 function onCreate(params)
     MOAISim.setHistogramEnabled(true)
 
@@ -57,11 +53,12 @@ function onExitButtonClick(e)
     os.exit(0)
 end
 
---------------------------------------------------------------------------------
--- Create Layer
---------------------------------------------------------------------------------
 
+--------------------------------------------------------------------------------
+-- Layer Creation
+--------------------------------------------------------------------------------
 function createBackgroundLayer()
+    -- General background
     backgroundLayer = Layer {}
     
     backgroundSprite = BackgroundSprite {
@@ -73,6 +70,7 @@ function createBackgroundLayer()
 end
 
 function createGuiView()
+    -- Main UI
     guiView = View {
         scene = scene,
     }
@@ -110,6 +108,7 @@ function createGuiView()
 end
 
 function createButton(text, parent)
+    -- Creates a generic button
     local button = Button {
         text = text,
         size = {200, 50},
@@ -120,6 +119,7 @@ function createButton(text, parent)
 end
 
 function createBackButton(parentScene)
+    -- Creates a back-button in a specified scene
     local view = View {
         scene = parentScene,
     }
