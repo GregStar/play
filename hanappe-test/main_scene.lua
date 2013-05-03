@@ -60,12 +60,12 @@ end
 function createBackgroundLayer()
     -- General background
     backgroundLayer = Layer {}
-    
+
     backgroundSprite = BackgroundSprite {
         texture = "assets/background.png",
         layer = backgroundLayer,
     }
-    
+
     SceneManager:addBackgroundLayer(backgroundLayer)
 end
 
@@ -74,17 +74,19 @@ function createGuiView()
     guiView = View {
         scene = scene,
     }
-    
+
     scroller = Scroller {
         parent = guiView,
         hBounceEnabled = false,
         layout = VBoxLayout {
-            align = {"center", "center"},
+            align = {"center", "top"},
             padding = {10, 10, 10, 10},
             gap = {10, 10},
         },
     }
-    
+
+    createTitleBarButton("whatever", scroller)
+
     titleLabel = TextLabel {
         text = "Dynlab Hanappe Test",
         size = {guiView:getWidth(), 50},
@@ -99,12 +101,22 @@ function createGuiView()
         parent = scroller,
         onClick = onExitButtonClick,
     }
-    
+
     for i, item in ipairs(SCENE_ITEMS) do
         local button = createButton(item.text, scroller)
         button.item = item
     end
-    
+
+end
+
+function createTitleBarButton(text, parent)
+    local button = Button {
+        text = text,
+        size = {200, 50},
+        parent = parent
+    }
+
+    return button
 end
 
 function createButton(text, parent)
