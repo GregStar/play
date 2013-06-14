@@ -1,0 +1,55 @@
+/* 
+    Document   : print
+    Created on : 22.07.2011, 02:05:03
+    Author     : sabine_d
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/*root { display: block; } */
+*{ background: transparent; color: black; margin: 0; padding: 0; border: none }
+
+body { font: 12pt Garamond, Palatino, "Times New Roman", Times, serif; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", "Lucida", 
+                         Verdana, "Bitstream Vera Sans", sans-serif; font-weight: bold; 
+                         margin: 1.75em 0 .5em 0; page-break-after: avoid; }
+
+h1{ font: normal normal bold 1.6em/1.6em Verdana; }
+
+h2 { font: normal normal bold 1.3em/1.3em Verdana; }
+
+h3 { font: normal normal bold 1.2em/1.2em Arial; }
+
+h3 a { text-decoration: none; }
+
+h4 { margin: 0.2em 0.5em; }
+
+a, a:visited, a:hover, a:visited:hover { color: #04667e; background: transparent; text-decoration: none; }
+
+a:link:after, a:link:visited:after { content: " (Link auf <" attr(href) ">) "; font-size: 76%; color: #999; background: transparent; }
+
+a[href^="/"]:link:after { content: " (Link auf <http://www.smartwheeler.at " attr(href) ">) "; }
+
+h1 a {color: black !important; }
+h1 a:after { content : "" !important;}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+p+p {
+  margin-top: -1em;
+  text-indent: 2em;
+}
+#div_modelle h2 { text-transform: uppercase; }
+
+#admin_menu, #bg_style, #nav_div, header img, #div_modelle a, .content_wrap a, img, 
+#highscore, #contact_form, #footer_div nav, #footer_style01, footer_style02{ display: none; }
+
+

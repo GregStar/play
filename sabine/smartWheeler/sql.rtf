@@ -1,0 +1,301 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs18 \cf0 \cb2 -- phpMyAdmin SQL Dump\
+-- version 2.6.3-pl1\
+-- http://www.phpmyadmin.net\
+-- \
+-- Host: localhost\
+-- Erstellungszeit: 16. August 2011 um 17:00\
+-- Server Version: 5.0.82\
+-- PHP-Version: 5.2.12\
+-- \
+-- Datenbank: `doebroessy`\
+-- \
+\
+-- --------------------------------------------------------\
+\
+-- \
+-- Tabellenstruktur f\'fcr Tabelle `admin`\
+-- \
+\
+CREATE TABLE `admin` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `name` varchar(20) NOT NULL,\
+  `rights` int(11) NOT NULL,\
+  `password` varchar(40) NOT NULL,\
+  `timestamp` timestamp NOT NULL default CURRENT_TIMESTAMP,\
+  `active` int(11) NOT NULL,\
+  PRIMARY KEY  (`id`)\
+) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 AUTO_INCREMENT=50 ;\
+\
+-- \
+-- Daten f\'fcr Tabelle `admin`\
+-- \
+\
+INSERT INTO `admin` VALUES (45, 'admin', 3, 'caebde409913a325a5eedb7fd74b383237d57796', '2011-08-16 06:43:04', 1);\
+INSERT INTO `admin` VALUES (49, 'sae', 3, '2aa36cc4efc00c1556f66b56733a63f7f3ab83f2', '2011-08-16 14:06:35', 0);\
+\
+-- --------------------------------------------------------\
+\
+-- \
+-- Tabellenstruktur f\'fcr Tabelle `beschreibung`\
+-- \
+\
+CREATE TABLE `beschreibung` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `tsp` timestamp NOT NULL default CURRENT_TIMESTAMP,\
+  `tag` varchar(10) NOT NULL,\
+  `text` text NOT NULL,\
+  `modell` int(11) NOT NULL,\
+  `tab` varchar(1) NOT NULL,\
+  PRIMARY KEY  (`id`)\
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;\
+\
+-- \
+-- Daten f\'fcr Tabelle `beschreibung`\
+-- \
+\
+INSERT INTO `beschreibung` VALUES (1, '2011-08-12 12:21:34', 'h3', 'Highspeed-Ausfl\'fcge ins unwegsame Gel\'e4nde', 7, '');\
+INSERT INTO `beschreibung` VALUES (2, '2011-08-12 11:51:43', 'p', 'Mit dem leistungstarken XtremePower startest du ins Abenteuer. Kein Berg ist dir mehr zu steil, kein Fluss zu tief, kein Gel\'e4nde ist zu unwegsam. Perfekte Stabilit\'e4t und die innovative Federung sorgen f\'fcr die n\'f6tige Sicherheit bei deinen Ausfl\'fcgen. Die griffigen Reifen zusammen mit einem starken Motor leisten ihren Beitrag zum n\'f6tigen Grip und der schnelle Beschleunigung. Worauf wartest du noch?', 7, '');\
+INSERT INTO `beschreibung` VALUES (3, '2011-08-12 11:53:11', 'li', 'Leistungsstarker 900cm3 Zweizylindermotor', 7, '');\
+INSERT INTO `beschreibung` VALUES (4, '2011-08-12 11:53:11', 'li', 'Zuschaltbarer Allradantrieb', 7, '');\
+INSERT INTO `beschreibung` VALUES (5, '2011-08-12 11:53:56', 'li', 'Einzelradaufh\'e4ngung mit 5-fach verstellbarer Federung', 7, '');\
+INSERT INTO `beschreibung` VALUES (6, '2011-08-12 11:53:56', 'li', 'hydraulische Scheibenbremsen', 7, '');\
+INSERT INTO `beschreibung` VALUES (7, '2011-08-12 11:54:20', 'li', 'H\'f6chstgeschwindigkeit: 120km/h', 7, '');\
+INSERT INTO `beschreibung` VALUES (8, '2011-08-16 10:35:29', 'h3', 'Umweltbewusstes Fahren', 8, '');\
+INSERT INTO `beschreibung` VALUES (9, '2011-08-16 10:37:08', 'p', 'Der neue Clean-Driver machts m\'f6glich: gr\'f6\'dftm\'f6glicher Fahrspa\'df, ohne die Umwelt zu belasten! Was will man mehr? Die modernen Akkus erm\'f6glichen uneingeschrenktes Fahrvergn\'fcgen in gewohntem Tempo.', 8, '');\
+INSERT INTO `beschreibung` VALUES (10, '2011-08-16 10:45:11', 'li', 'einfach Akkus aufladen und losstarten', 8, '');\
+INSERT INTO `beschreibung` VALUES (11, '2011-08-16 10:44:51', 'li', 'so sauber kann Quadfahren sein', 8, '');\
+INSERT INTO `beschreibung` VALUES (12, '2011-08-16 10:38:19', 'h3', 'So schnell hast du noch nie einen Parkplatz gefunden', 9, '');\
+INSERT INTO `beschreibung` VALUES (13, '2011-08-16 10:40:01', 'p', 'Der City-Style ist ganz speziell f\'fcr die Stadt ausgelegt und selbstverst\'e4ndlich inklusive Stra\'dfenzulassung. Aufsteigen und Losfahren, ohne Zeit f\'fcrs Parkplatzsuchen einplanen zu m\'fcssen. Dieses smarte Gef\'e4hrt findet \'fcberall Platz.', 9, '');\
+INSERT INTO `beschreibung` VALUES (14, '2011-08-16 10:44:10', 'li', 'Stra\'dfenzulassung bereits inkludiert', 9, '');\
+INSERT INTO `beschreibung` VALUES (15, '2011-08-16 10:43:47', 'li', 'Geschwindigkeiten bis 110km/h', 9, '');\
+\
+-- --------------------------------------------------------\
+\
+-- \
+-- Tabellenstruktur f\'fcr Tabelle `gallery`\
+-- \
+\
+CREATE TABLE `gallery` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `modell` int(11) NOT NULL,\
+  `need` varchar(50) default NULL,\
+  `url_thumb` varchar(50) NOT NULL,\
+  `url_mobile` varchar(50) NOT NULL,\
+  `url_pic` varchar(50) NOT NULL,\
+  `alt` varchar(50) NOT NULL,\
+  `tsp` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,\
+  PRIMARY KEY  (`id`)\
+) ENGINE=MyISAM AUTO_INCREMENT=190 DEFAULT CHARSET=utf8 AUTO_INCREMENT=190 ;\
+\
+-- \
+-- Daten f\'fcr Tabelle `gallery`\
+-- \
+\
+INSERT INTO `gallery` VALUES (177, 9, 'home_slider', 'gallery/thumbs/Yamaha-Quad-a19573006.jpg', 'gallery/mobile/Yamaha-Quad-a19573006.jpg', 'gallery/pics/Yamaha-Quad-a19573006.jpg', 'Yamaha-Quad-a19573006', '2011-08-16 10:30:27');\
+INSERT INTO `gallery` VALUES (180, 9, NULL, 'gallery/thumbs/quad-tour-quad-fahren.jpg', 'gallery/mobile/quad-tour-quad-fahren.jpg', 'gallery/pics/quad-tour-quad-fahren.jpg', 'quad-tour-quad-fahren', '2011-08-16 10:16:51');\
+INSERT INTO `gallery` VALUES (181, 7, NULL, 'gallery/thumbs/CanAmATV.jpg', 'gallery/mobile/CanAmATV.jpg', 'gallery/pics/CanAmATV.jpg', 'CanAmATV', '2011-08-16 10:18:45');\
+INSERT INTO `gallery` VALUES (179, 9, NULL, 'gallery/thumbs/action_01.jpg', 'gallery/mobile/action_01.jpg', 'gallery/pics/action_01.jpg', 'action_01', '2011-08-16 10:14:45');\
+INSERT INTO `gallery` VALUES (182, 7, NULL, 'gallery/thumbs/Yamaha-700r.jpg', 'gallery/mobile/Yamaha-700r.jpg', 'gallery/pics/Yamaha-700r.jpg', 'Yamaha-700r', '2011-08-16 10:30:14');\
+INSERT INTO `gallery` VALUES (183, 7, NULL, 'gallery/thumbs/ATV (8).jpg', 'gallery/mobile/ATV (8).jpg', 'gallery/pics/ATV (8).jpg', 'ATV (8)', '2011-08-16 10:18:46');\
+INSERT INTO `gallery` VALUES (184, 7, NULL, 'gallery/thumbs/2009-Suzuki-QuadSport-Z400-12.jpg', 'gallery/mobile/2009-Suzuki-QuadSport-Z400-12.jpg', 'gallery/pics/2009-Suzuki-QuadSport-Z400-12.jpg', '2009-Suzuki-QuadSport-Z400-12', '2011-08-16 10:18:46');\
+INSERT INTO `gallery` VALUES (185, 8, 'home_slider', 'gallery/thumbs/Quads_3268_2.jpg', 'gallery/mobile/Quads_3268_2.jpg', 'gallery/pics/Quads_3268_2.jpg', 'Quads_3268_2', '2011-08-16 10:30:49');\
+INSERT INTO `gallery` VALUES (186, 8, NULL, 'gallery/thumbs/quad_moto_sport.jpg', 'gallery/mobile/quad_moto_sport.jpg', 'gallery/pics/quad_moto_sport.jpg', 'quad_moto_sport', '2011-08-16 10:20:56');\
+INSERT INTO `gallery` VALUES (187, 8, NULL, 'gallery/thumbs/104461.jpg', 'gallery/mobile/104461.jpg', 'gallery/pics/104461.jpg', '104461', '2011-08-16 10:20:56');\
+INSERT INTO `gallery` VALUES (189, 7, 'home_slider', 'gallery/thumbs/quad.png', '', 'gallery/pics/quad.png', 'quad', '2011-08-16 10:27:43');\
+\
+-- --------------------------------------------------------\
+\
+-- \
+-- Tabellenstruktur f\'fcr Tabelle `game`\
+-- \
+\
+CREATE TABLE `game` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `variable` varchar(9) NOT NULL,\
+  `wert` int(11) NOT NULL,\
+  `default` int(11) NOT NULL,\
+  PRIMARY KEY  (`id`)\
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;\
+\
+-- \
+-- Daten f\'fcr Tabelle `game`\
+-- \
+\
+INSERT INTO `game` VALUES (1, 'leben', 5, 5);\
+INSERT INTO `game` VALUES (2, 'interval', 900, 900);\
+INSERT INTO `game` VALUES (3, 'levelTime', 10000, 10000);\
+INSERT INTO `game` VALUES (4, 'sideSpeed', 15, 15);\
+\
+-- --------------------------------------------------------\
+\
+-- \
+-- Tabellenstruktur f\'fcr Tabelle `modelle`\
+-- \
+\
+CREATE TABLE `modelle` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `name` varchar(25) default NULL,\
+  `header_txt` text NOT NULL,\
+  `tsp` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,\
+  PRIMARY KEY  (`id`)\
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;\
+\
+-- \
+-- Daten f\'fcr Tabelle `modelle`\
+-- \
+\
+INSERT INTO `modelle` VALUES (8, 'Clean-Drive', 'Umweltbewusst, zuverl\'e4ssig und kosteng\'fcnstig begleitet dich der CleanDrive auf deinen Abenteuern. Die leistungstarken Akkus machens m\'f6glich; einfach aufladen und los geht''s!', '2011-08-10 18:18:29');\
+INSERT INTO `modelle` VALUES (7, 'Xtreme-Power', 'Fahre dem Alltag davon! Mit dem neuen XtremPower aus der smartWHEELER Familie erlebst du h\'f6chsten Fahrkomfort in jedem Gel\'e4nde. Der leistungstarke Antrieb mit Allradantrieb im Bedarfsfall und Hightech-Federung lassen dich jedes unwegsame Gel\'e4nde \'fcberwinden. Die Welt geh\'f6rt dir!', '2011-08-16 00:13:40');\
+INSERT INTO `modelle` VALUES (9, 'City-Style', 'Mit dem CityStyle liegst du voll im Trend! W\'e4hrend andere noch Parkplatz suchen st\'fcrzt du dich bereits in die Partynacht. Der Zweisitzer inklusive Stra\'dfenzulassung lenkt mit seinem smarten Design die Aufmerksamkeit auf dich. Sei der Star des Abends!', '2011-08-10 18:19:09');\
+\
+-- --------------------------------------------------------\
+\
+-- \
+-- Tabellenstruktur f\'fcr Tabelle `news`\
+-- \
+\
+CREATE TABLE `news` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `tsp` timestamp NOT NULL default CURRENT_TIMESTAMP,\
+  `titel` tinytext NOT NULL,\
+  `short_text` text NOT NULL,\
+  `long_text` longtext NOT NULL,\
+  `event` int(11) NOT NULL default '0',\
+  PRIMARY KEY  (`id`)\
+) ENGINE=MyISAM AUTO_INCREMENT=105 DEFAULT CHARSET=utf8 AUTO_INCREMENT=105 ;\
+\
+-- \
+-- Daten f\'fcr Tabelle `news`\
+-- \
+\
+INSERT INTO `news` VALUES (3, '2011-08-16 09:48:26', 'Teststrecke fertiggestellt', '<p>Der letzte Bagger ist abgerollt, die neue Teststrecke erstrahlt in frischen Glanz. Nat&uuml;rlich konnte es sich das Team nicht nehmen lassen, die Strecke gleich auszuprobieren und so rasten bald 7 Quads dar&uuml;ber hinweg. Den ersten H&auml;rtetest hat das Gel&auml;nde mit Bravour bestanden.</p>', '<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>', 0);\
+INSERT INTO `news` VALUES (103, '2011-08-16 09:46:17', 'smartWHEELER ist online!', '<p>Das lange Warten hat sich gelohnt, endlich ist die Page on. Der Onlineauftritt reicht von einem Flash-Game, einer mobilen Seite sowie einer Facebook-App bis hin zu einem Backend, das die Administration von Newslettern, Newsbereich auf der Page, verwaltbare Galleries und vieles mehr beinhaltet. &Uuml;berzeugt euch selbst...</p>', '<p>Heute am 16. August geht das Projekt smartWHEELER in seine Abschlussphase.</p>', 0);\
+\
+-- --------------------------------------------------------\
+\
+-- \
+-- Tabellenstruktur f\'fcr Tabelle `newsletter`\
+-- \
+\
+CREATE TABLE `newsletter` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `vorname` varchar(25) NOT NULL,\
+  `nachname` varchar(25) NOT NULL,\
+  `email` varchar(35) NOT NULL,\
+  `newsletter` int(11) NOT NULL,\
+  PRIMARY KEY  (`id`)\
+) ENGINE=MyISAM AUTO_INCREMENT=97 DEFAULT CHARSET=utf8 AUTO_INCREMENT=97 ;\
+\
+-- \
+-- Daten f\'fcr Tabelle `newsletter`\
+-- \
+\
+INSERT INTO `newsletter` VALUES (89, 'test', 'test', 'angelika_doebroessy@aon.at', 1);\
+INSERT INTO `newsletter` VALUES (91, 'name', 'schaun wir mal', 'sabine_d@aon.at', 1);\
+INSERT INTO `newsletter` VALUES (90, 'eva', 'd\'c3\'b6br\'c3\'b6ssy', 'e.doebroessy@aon.at', 1);\
+INSERT INTO `newsletter` VALUES (96, 'vorname', 'test', 'test@test.at', 1);\
+INSERT INTO `newsletter` VALUES (95, 'testperon', 'nachname', 'email@gmx.at', 1);\
+\
+-- --------------------------------------------------------\
+\
+-- \
+-- Tabellenstruktur f\'fcr Tabelle `pictures`\
+-- \
+\
+CREATE TABLE `pictures` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `news_id` int(11) NOT NULL,\
+  `url_thumb` varchar(35) NOT NULL,\
+  `url_pic` varchar(35) NOT NULL,\
+  `alt` varchar(25) NOT NULL,\
+  `tsp` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,\
+  PRIMARY KEY  (`id`)\
+) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=utf8 AUTO_INCREMENT=38 ;\
+\
+-- \
+-- Daten f\'fcr Tabelle `pictures`\
+-- \
+\
+INSERT INTO `pictures` VALUES (37, 103, 'news_pics/thumbs/cover_1.jpg', 'news_pics/pics/cover_1.jpg', 'cover_1', '2011-08-16 09:46:17');\
+\
+-- --------------------------------------------------------\
+\
+-- \
+-- Tabellenstruktur f\'fcr Tabelle `score`\
+-- \
+\
+CREATE TABLE `score` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `date` timestamp NOT NULL default CURRENT_TIMESTAMP,\
+  `name` varchar(35) NOT NULL,\
+  `points` int(11) NOT NULL,\
+  PRIMARY KEY  (`id`)\
+) ENGINE=MyISAM AUTO_INCREMENT=115 DEFAULT CHARSET=utf8 AUTO_INCREMENT=115 ;\
+\
+-- \
+-- Daten f\'fcr Tabelle `score`\
+-- \
+\
+INSERT INTO `score` VALUES (1, '2011-06-11 19:27:02', 'Michael', 12950);\
+INSERT INTO `score` VALUES (2, '2011-06-11 19:27:02', 'Sandra', 5031);\
+INSERT INTO `score` VALUES (3, '2011-06-11 19:27:45', 'Mara', 2289);\
+INSERT INTO `score` VALUES (4, '2011-06-11 19:27:45', 'Ernst', 10750);\
+INSERT INTO `score` VALUES (5, '2011-06-11 19:28:14', 'Silvia', 7844);\
+INSERT INTO `score` VALUES (6, '2011-06-11 19:28:14', 'Alex', 7985);\
+INSERT INTO `score` VALUES (7, '2011-06-11 19:34:52', 'Manuel', 5439);\
+INSERT INTO `score` VALUES (8, '2011-06-11 19:35:06', 'Silvia', 5428);\
+INSERT INTO `score` VALUES (48, '2011-07-29 23:39:17', 'Sabine', 85);\
+INSERT INTO `score` VALUES (49, '2011-07-29 23:40:51', 'Sabine', 320);\
+INSERT INTO `score` VALUES (50, '2011-07-29 23:41:34', 'Manuela', 400);\
+INSERT INTO `score` VALUES (52, '2011-07-29 23:48:54', 'Manuela', 440);\
+INSERT INTO `score` VALUES (53, '2011-07-30 00:00:47', 'Manuela', 715);\
+INSERT INTO `score` VALUES (71, '2011-07-30 04:47:31', 'Angelika', 115);\
+INSERT INTO `score` VALUES (114, '2011-08-16 16:52:50', 'dffgd', 62);\
+INSERT INTO `score` VALUES (113, '2011-08-16 14:05:02', 'testplayer', 137);\
+INSERT INTO `score` VALUES (112, '2011-08-15 03:06:43', 'sabine', 178);\
+INSERT INTO `score` VALUES (111, '2011-08-08 19:44:08', 'xyz', 306);\
+INSERT INTO `score` VALUES (80, '2011-07-30 15:06:34', 'Sabine', 178);\
+INSERT INTO `score` VALUES (81, '2011-07-30 15:07:33', 'Sabine', 434);\
+INSERT INTO `score` VALUES (82, '2011-07-30 15:07:49', 'Sabine', 496);\
+INSERT INTO `score` VALUES (83, '2011-07-30 15:08:24', 'Sabine', 639);\
+INSERT INTO `score` VALUES (84, '2011-07-30 15:09:31', 'Eva', 917);\
+INSERT INTO `score` VALUES (85, '2011-07-30 19:12:05', 'Samatha', 66);\
+INSERT INTO `score` VALUES (86, '2011-07-31 05:23:04', 'Michi', 259);\
+INSERT INTO `score` VALUES (110, '2011-08-03 14:08:33', 'flo', 169);\
+INSERT INTO `score` VALUES (109, '2011-08-02 16:23:57', 'SAE', 182);\
+INSERT INTO `score` VALUES (108, '2011-08-02 16:21:12', 'SAE', 102);\
+INSERT INTO `score` VALUES (107, '2011-08-01 18:45:45', 'sae', 228);\
+\
+-- --------------------------------------------------------\
+\
+-- \
+-- Tabellenstruktur f\'fcr Tabelle `style`\
+-- \
+\
+CREATE TABLE `style` (\
+  `id` int(11) NOT NULL auto_increment,\
+  `style_number` int(1) NOT NULL,\
+  `name` varchar(8) NOT NULL,\
+  `css` varchar(15) NOT NULL,\
+  `plugins` varchar(16) NOT NULL,\
+  `script` varchar(15) NOT NULL,\
+  `active` int(11) default NULL,\
+  `sort_models` varchar(10) NOT NULL,\
+  PRIMARY KEY  (`id`)\
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;\
+\
+-- \
+-- Daten f\'fcr Tabelle `style`\
+-- \
+\
+INSERT INTO `style` VALUES (1, 0, 'standart', 'style', 'plugins', 'script', 1, '7,9,8');\
+INSERT INTO `style` VALUES (2, 1, 'street', 'style02_street', 'plugins02_street', 'script02_street', 0, '9,7,8');\
+INSERT INTO `style` VALUES (3, 2, 'green', 'style03_green', 'plugins03_green', 'script03_green', 0, '8,7,9');\
+}

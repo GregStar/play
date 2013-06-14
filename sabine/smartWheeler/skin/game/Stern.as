@@ -1,0 +1,1 @@
+﻿package  {	public class Stern extends Rotate {		public var punkte:uint = 5;				public function Stern() {				}//ende Star	}}

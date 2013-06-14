@@ -1,0 +1,1 @@
+﻿package  {		import flash.display.MovieClip;			public class Tacho extends Rotate {		public var punkte:uint = 15;				public function Tacho() {			// constructor code		}	}	}

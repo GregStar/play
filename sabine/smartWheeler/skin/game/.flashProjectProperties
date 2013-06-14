@@ -1,0 +1,32 @@
+<projectDescription>
+  <id>1311852141597</id>
+  <name>milestone3</name>
+  <asVersion>0</asVersion>
+  <boundTemplate>file:///Macintosh HD/Users/sabine_d/Library/Application Support/Adobe/Flash CS5/de_DE/Configuration/ActionScript 3.0/Templates/boundClass_as3.as</boundTemplate>
+  <classTemplate>file:///Macintosh HD/Users/sabine_d/Library/Application Support/Adobe/Flash CS5/de_DE/Configuration/ActionScript 3.0/Templates/standardClass_as3.as</classTemplate>
+  <classPath>.</classPath>
+  <defaultApp/>
+  <rootURI>file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/</rootURI>
+  <flexSDK/>
+  <sources editable="false"/>
+  <libraries editable="false"/>
+  <externalLibraries editable="false"/>
+  <compileList editable="false"/>
+  <recentFiles editable="false">
+    <uri label="Dokument.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/Dokument.as</uri>
+    <uri label="Hindernis.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/Hindernis.as</uri>
+    <uri label="Rotate.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/Rotate.as</uri>
+    <uri label="Leben.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/Leben.as</uri>
+    <uri label="ZeitAnzeige.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/ZeitAnzeige.as</uri>
+    <uri label="StartScreen.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/StartScreen.as</uri>
+    <uri label="Anzeige.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/Anzeige.as</uri>
+    <uri label="Zoom.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/Zoom.as</uri>
+    <uri label="Quad.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/Quad.as</uri>
+    <uri label="EndeScreen.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/EndeScreen.as</uri>
+    <uri label="Verkleinern.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/Verkleinern.as</uri>
+    <uri label="Tacho.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/Tacho.as</uri>
+    <uri label="Credit.as">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/Credit.as</uri>
+    <uri label="quad_first_trie.fla">file:///Macintosh HD/Applications/XAMPP/xamppfiles/htdocs/milestone3/skin/game/quad_first_trie.fla</uri>
+  </recentFiles>
+  <locations editable="false"/>
+</projectDescription>

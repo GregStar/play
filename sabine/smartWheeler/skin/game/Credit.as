@@ -1,0 +1,1 @@
+﻿package  {		public class Credit extends Rotate {		public var punkte:uint = 10;				public function Credit() {		}	}	}

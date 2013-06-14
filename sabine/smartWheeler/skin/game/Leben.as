@@ -1,0 +1,1 @@
+﻿package  {		import flash.events.Event;	import flash.display.Sprite;		public class Leben extends Sprite {				public function Leben() {			addEventListener(Event.ADDED_TO_STAGE, geadded);		}//ende Konstruktor Leben				private function geadded(evt:Event){			width = width/5*2;			height = height/5*2;		}//ende geadded()	}}

@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* 
+    Document   : style
+    Created on : 25.04.2011, 10:52:13
+    Author     : Sabine_d
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+*{ margin: 0; padding: 0; border: none; list-style: none; }
+
+body{ background: #26365c url(../img/stadt/main_bg3.png) repeat center center scroll; font: normal normal normal 1.2em/1.4em Tahoma; color: #ededed; }
+
+header { height: 115px; position: relative; overflow: hidden; }
+
+footer { display: block; clear: both; height: 302px; position: relative; margin: 2em 0 0 0; }
+
+footer p { position: absolute; bottom: 0px; font: normal normal normal 0.8em/1em Tahoma; }
+
+h1{ font: normal normal bold 2em/2em Tahoma; text-transform: uppercase; }
+
+h2, #contact_form legend { font: normal normal bold 2.2em/2.2em Tahoma; text-transform: uppercase; color: #f59a26; }
+
+h3 { font: normal normal bold 1.4em/1.5em Tahoma; color: #ec681d; padding: 0.2em 0; }
+
+h4 { font: normal normal bold 1em/1em Tahoma; color: #929292; padding: 0.5em; }
+
+a { display: block; color: #ec681d; font: normal normal normal 1.2em/1.2em Tahoma; cursor: pointer;}
+
+article { margin: 1em 0 2em; border-bottom: 1px solid #e9eaee; }
+
+article p { margin: 1em 0.5em; }
+
+article p a { display: block; font: normal normal bold 1em/1.2em Tahoma; text-align: right; color: #f59a26; padding: 0.5em; }
+
+time { font: italic normal normal 0.9em/1em Tahoma; margin: 0.2em 0.5em; color: #bdc2cd; }
+
+input { display: block; width: 98%; }
+
+fieldset ul { margin: 0.5em 0; }
+
+fieldset ul li { margin: 0 auto 3px; color: #26365c; width: 200px; padding: 3px 8%; background: #bdc2cd; }
+
+textarea { height: 8em; font: normal normal normal 0.9em/1.2em Helvetica; padding: 7px 2px 2px 10px; width: 93%; height: 6em; max-width: 186px; min-width: 186px; }
+
+label { width: 100%; display: block; line-height: 1.5em; font-weight: bold; }
+
+
+/** DIVS **/
+
+#header_style { background: url(../img/stadt/bg_header.png) repeat-x top center scroll; height: 364px; }
+
+#wrapper{  position: relative; width: 92%; min-width: 800px; max-width: 1400px; margin: 0 auto; }
+
+#logo { float: left; width: 331px; height: 133px; background: url(../img/stadt/logo_stadt2.png) no-repeat top left scroll; text-indent: -9999px; }
+
+#nav_div { float: right; }
+
+#main_nav { font: normal normal bold 1.4em/1 Tahoma; }
+
+#main_nav ul li { float: left; }
+
+#main_nav ul li a { text-decoration: none; padding: 0 7.8%; }
+
+#sub_nav { clear: both; font: normal normal normal 0.8em/1.8em Tahoma; }
+
+#sub_nav a{ text-decoration: none; color: #f6f6f6; }
+
+#sub_nav a:before { content: '>> '; }
+
+#quad_pic { display: none; }
+
+#content { clear: both; }
+
+
+
+    /* speziefisches */
+
+#footer_style { background: url(../img/stadt/footer_bg.png) repeat-x bottom center scroll; }
+
+#footer_div nav { display: inline-block; }
+
+#footer_div nav ul { margin: 3.2em 0 0 0;}
+
+#footer_div nav ul li { margin: 1em 2em; }
+
+#footer_div nav ul li a { text-decoration: none; font: normal normal bold 1em/1em Tahoma; padding: 0 1.5em; }
+
+#contact { position: absolute; right: 30%; bottom: 50px; display: inline-block; color: #f59a26; margin: 0 1.5em;
+           font: normal normal normal 1.2em/1.4em Tahoma; text-align: right; }
+
+#contact a { color: #ededed; }
+
+#newsletter_form { position: absolute; display: inline-block; bottom: 50px; right: 0px; }
+
+#newsletter_form legend{ background: #BDC2CD; color: #26365C; width: 84%; padding: 5px 8%;
+                         font: normal normal bold 1.2em/1.2em Tahoma; text-transform: uppercase; }
+
+/* HOME */
+    #div_modelle h2 {margin: 2% 0 0 4%;}
+
+    #news { border-left: 1px solid #e9eaee; border-right: 1px solid #e9eaee; }
+
+    #veranstaltung { border-left: 1px solid #e9eaee; }
+
+   
+    #contact_div { display: inline-block; float: left; width: 29.5%; padding-bottom: 1.5em; border-bottom: 1px solid #e9eaee; }
+
+    #contact_form { width: 100%; position: relative; }
+
+
+
+#articel { display: inline-block; float: right; width: 70%; position: relative; }
+
+#articel h2 { padding: 0 0.5em 0.4em; }
+
+#articel div { width: 33%; float: left; margin-top: 1.4em; }
+
+#articel li { margin: 0 6%; }
+
+#home_anfahrt { clear: left; width: 30%; }
+
+#home_anfahrt p { margin: 0.5em 2em; }
+
+#home_anfahrt a { display: block; text-align: right; padding: 0.5em 1em; font: normal normal bold 1em/1.2em Tahoma; color: #f59a26; }
+
+#anfahrtsplan { text-align: right; margin: 1em 1em 0.5em; }
+
+#elemente{ clear: both; }
+
+#main_nav ul li:first-child a { border: none; padding-left: 0; }
+
+#main_nav ul li:nth-child(4) a, #main_nav ul li:last-child a { padding-right: 0; }
+
+#elemente { padding: 1em 3em; }
+
+#elemente hr { background: #361601; color: #361601; height: 1px; }
+
+#elemente p { padding: 0.5em 1em; }
+
+#elemente ol{ list-style: decimal inside; padding: 0.5em; }
+
+#elemente ul { list-style: disc inside; padding: 0.5em; }
+
+#elemente form ul { list-style: none; }
+
+#elemente legend { font: bold 1em/1.7em Tahoma; }
+
+#elemente form p { padding: 0.2em 1em; }
+
+#elemente form ul li{ margin: 3px 2em; padding: 0.5em; text-align: left; }
+
+#radio input, #check input{ padding-top: 0.7em; border: solid 1px red; }
+
+#radio input, #check input { width: auto; display: inline; margin: 0.5em; }
+
+#select{ display: block; margin: 0.5em; }
+
+#elemente img { margin: 1.5em; }
+
+.top_navi { position: absolute; top: 0px; right: 17%; }
+
+.top_navi:first-child{ right: 30%; }
+
+.top_navi:last-child{ right: 0; }
+
+.top_navi a{ color: #ededed; margin: 0.3em 1%; float: left; font-size: 0.8em; }
+
+/* .kampagne_hidden { display: none; }
+*/
+#div_modelle ul li{ background: url(../img/stadt/pics/main_pic_stadt2.jpg) no-repeat center right scroll; height: 442px; outline: 10px solid #ededed;
+                  position: relative; margin: 0.6em 10px 1em; overflow: hidden;}
+
+#div_modelle ul li h3 { text-align: right; margin: 1.5em 10% 0; text-transform: uppercase; font: normal normal bold 2em/1.5em Tahoma; color: #ededed; }
+
+#div_modelle ul li .modell_content { width: 40%; margin: 0 0 20px 4%; }
+#div_modelle ul li p{ margin-top: 5%; font-size: 1.2em; line-height: 1.4em; }
+
+#div_modelle ul li a {  }
+
+#div_modelle .image_container { position:absolute; right: 0px; bottom: 3%; width: 400px; padding: 0 5%; }
+
+#div_modelle .image_container img { float: right; max-width: 380px; }
+/*#div_modelle ul li img { position: absolute; bottom: 0px; right: 150px; margin: 1em 0; }
+*/
+.link_slider{ z-index: 3; position: absolute; width: 38px; height: 38px; top: 470px; text-indent: -9999px; text-decoration: none;
+              -moz-border-radius: 38px; border-radius: 38px;
+              -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; }
+
+#zurueck { right: 450px; z-index: 3; background: #f6f6f6 url(../img/stadt/button_links_zurueck.png) no-repeat center center scroll; margin-left: 0.5em; }
+
+#weiter { background: #f6f6f6 url(../img/stadt/button_rechts_weiter.png) no-repeat center center scroll; right: 50px; margin-right: 0.5em; }
+
+#first_line { margin: 20px 0; }
+
+.abschicken_button { width: 100% !important; height: 2em; padding: 0.2em 1em; border: #26365c solid 2px; background: none !important;
+                     color: #26365c; font: normal normal bold 1em/1.2em Tahoma; text-transform: uppercase; text-align: center; }
+
+.sub_navi_link{ text-transform: capitalize; }
+
+.main_navi a{ float: left; margin: 65px 0 0; border-left: #f6f6f6 1px solid; color: #f59a26; font: normal normal bold 1em/1.2em Tahoma; }
+
+
+/*
+.city_slider_active p{ position: absolute; top: 0px; left: 0px; font: normal normal bold 1.5em/1.2em Tahoma; border: solid 12px #26365c;
+                       margin: 11px; padding: 25px 30px 16px 150px; float: left; width: 48.4%; max-width: 48.4%; height: 253px; text-align: right;
+                       background: #777777 url(../img/stadt/main_pic_bg_stadt.jpg) no-repeat bottom right scroll; }
+
+.city_slider_active a { font: normal normal bold 1em/1em Tahoma !important; display: block; position: absolute; bottom: 16px; right: 40px;
+                        padding: 0.3em 1em; color: #3c3c3b; background: #f59a26; border: solid 5px #3c3c3b; }
+
+.city_slider_active h2 { color: #26365c !important; border: solid 8px #26365c !important; }
+
+/*.city_slider_hidden p, .city_slider_hidden a, .city_slider_hidden img, .city_slider_hidden ol{ display: none; }
+*/
+#container{ background: #bdc2cd; outline: 10px solid #bdc2cd; margin: 10px; margin-top: 2em; padding: 1px 0 ; /*text-align: right; position: relative;*/ /*height: 322px;*/ }
+
+
+#container p { width: 60%; border: 10px #26365c solid; padding: 3% 4%; margin: 1% 0 3% 0;
+               background: #26365c; background: rgba(38, 54, 92, 0.6);  
+    -webkit-box-shadow: 5px 5px 10px 5px #bdc2cd; -moz-box-shadow: 5px 5px 10px 5px #bdc2cd; box-shadow: 5px 5px 10px 5px #bdc2cd; }
+
+#container p a {margin-top: 1em; display: block; width: 45%;  }
+
+#about, #probefahren, #game, #highscore { outline: 10px solid #26365c; margin: 10px; padding: 2%; width: 65%; height: 415px; }
+
+#about { background-image: url(../img/stadt/freilandstrasse.png); }
+
+#probefahren { background-image: url(../img/stadt/kreuzung.png); }
+
+#container h2{ margin-left: 5%;/*display: inline-block; text-align: right; max-width: 200px; width: 31.2%;  
+               margin: 3px 0; padding: 33px 19px 6px 5px; height: 100%;
+               font: normal normal bold 1.25em/1em Tahoma; color: #959596; border: solid 8px #e9eaee; */}
+
+

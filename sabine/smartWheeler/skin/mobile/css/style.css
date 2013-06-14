@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+*{ margin: 0; padding: 0; border: none; list-style: none; }
+
+body {background: #F4BF79 url(../img/hoch/reifenspur.png) no-repeat center center fixed; color: #742F09;}
+
+h1 { background: url(../img/logo2.png) no-repeat top left scroll; text-indent: -9999px;  width: 220px; height: 95px; margin-bottom:4%;}
+
+h2 { background-color: #f4d0a2;  background-color: rgba(249,230,206, 0.7); color:#ec681d; padding: 0.4em 0 0.4em 7%;
+                           font: normal normal bold 1.6em/1.2em "Arial Black"; text-transform: uppercase;
+                           -moz-border-radius: 10px; border-radius: 10px; -webkit-border-radius: 10px;
+             -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; }
+h2 a { text-decoration: none; color: #ec681d;  }
+
+h2 span a { float: right; font: normal normal normal 0.7em/1.35em Arial; color: #318508; padding: 0.4em 7% 0.4em 0; text-decoration: underline;}
+
+h3 { margin: 1em 0 0.5em; color: #318508; }
+
+table { margin-top: 1.5em; font: normal normal bold 1.1em/1.2em Arial; width: 100%; }
+thead { color: #318508;}
+
+
+input { height: 2em; background: #f9e6ce; font: normal normal normal 0.9em/1.2em "Tahoma"; text-indent: 0.8em; width:100%;
+        -moz-border-radius: 12px; border-radius: 12px; -webkit-border-radius: 12px;
+        -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; }
+
+textarea { font: normal normal normal 0.9em/1.2em "Tahoma"; width: 92%; padding: 4%; height: 6em;
+           background: #f9e6ce; -moz-border-radius: 12px; border-radius: 12px; resize: none;
+           -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; } 
+
+label {display: block; position: relative; width: 100%; text-align: left;}
+
+.label {display: block; margin: 4% 0.8em 0.4%; }
+
+.abschicken_button { width: 100%;  background: #318508; background: rgba(49, 133, 8, 0.7); color: #F9E6CE !important; height: 2em !important; margin: 6% 0 1% !important;
+                     font: normal normal bold 1em/1em Arial !important; text-align: center; text-indent: 0 !important;
+					 -moz-border-radius: 8px; border-radius: 8px; -webkit-border-radius: 8px;
+                     -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; }
+
+#news_anfordern{ width: auto; display: inline; height: auto; margin: 4% 2% 0 4%;}
+
+.after_checkbox { margin: 4% 0 0.4em; }
+
+.fehler, .LV_invalid  {color: red!important; display:block; margin: 1% 4%;}
+
+.LV_valid_field{ background: #f9e6ce url(../../../plugins/livevalidation/valid.png) no-repeat center right scroll; }
+
+.LV_invalid_field { background: #f9e6ce url(../../../plugins/livevalidation/invalid.png) no-repeat center right scroll; }
+
+.top { font: normal normal normal 0.9em/1.35em Arial; color: #318508; padding: 0.4em 0 0.4em 7%; margin-bottom: 1em; display: block;}
+.top:hover{ color: #361601; }
+
+.link { font: italic normal bold 1em/1.35em Arial; color: #318508; display: block; } 
+.link:hover { color: #361601; }
+
+.em { font-weight: bold;}
+#wrapper { width: 94%; padding: 4% 3% 2%;}
+
+.button{ display: block; margin: 0.4em 0; text-align: center;  text-transform: uppercase; background: #318508; background: rgba(49, 133, 8, 0.85); color: #F9E6CE;
+         padding: 0.6em 0; font-weight: bold; text-decoration: none;
+         /* border: 2px solid #00631a;*/ -moz-border-radius: 8px; border-radius: 8px; -webkit-border-radius: 8px;
+         -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; }
+
+#main_nav a:hover { color: #361601;  }	
+
+.container { margin-top: 4%; overflow: hidden; background-color: #f4d0a2; background-color: rgba(249,230,206, 0.5);
+             -moz-border-radius: 10px; border-radius: 10px; -webkit-border-radius: 10px;
+             -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+			 
+.text{  width: 86%; margin: 6% auto 8%; text-align: right; font: normal normal normal 1.05em/1.35em Arial; }			 
+
+.text p { margin-bottom: 1.5em; }
+
+
+footer p { font: normal normal bold 0.9em/1.15em Arial;  margin-top: 4%;}

@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* 
+    Document   : style
+    Created on : 25.04.2011, 10:52:13
+    Author     : Sabine_d
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+*{ margin: 0; padding: 0; border: none; list-style: none; }
+
+body{ font: normal normal normal 1em/1.4em Tahoma; color:#26365c; }
+
+header:after { content:"."; clear: both; height: 0; display: block; visibility: hidden; }
+
+h1{ font: normal normal bold 2em/2em Tahoma; text-transform: uppercase; }
+
+h2, #contact_form legend { font: normal normal bold 1.8em/1.8em Tahoma; text-transform: uppercase; color: #ec681d; }
+
+h3 { font: normal normal bold 1.4em/1.5em Tahoma; color: #ec681d; padding: 0.2em 0; color: #ec681d;}
+
+h3 a {color: #ec681d!important; padding: 0!important;}
+h4 { font: normal normal bold 1em/1em Tahoma; color: #929292; padding: 0.5em; }
+
+a { color: #f59a26; font: normal normal normal 1.2em/1.2em Tahoma; cursor: pointer; padding: 0.2em 0.5em;}
+a:hover {}
+
+
+p, table{ margin-bottom: 6%; }
+
+article{ margin-bottom: 2.5em; }
+article p { margin: 0.2em 0 1em;}
+article a { display: block;}
+
+time { margin: 0 1em; font: italic normal normal 0.9em/1em Arial; }
+
+ol li{ list-style: inside decimal; }
+
+ul:after { content:"."; clear: both; height: 0; display: block; visibility: hidden; }
+
+
+img { line-height: 0em;}
+
+fieldset { outline: none; }
+
+legend { padding: 0.5em 4% 1em; color:#361601; font: normal normal bold 1.2em/1.2em Arial; margin: 0.5em 1em 0;}
+
+label {display: block; position: relative; width: 100%; text-align: left;}
+
+input { height: 2em; font: normal normal normal 0.9em/1.2em "Tahoma"; text-indent: 0.8em; width:100%; }
+
+textarea { font: normal normal normal 0.9em/1.2em "Tahoma"; width: 92%; padding: 4%; height: 10.7em; } 
+
+form { text-align: left; }
+
+/* HEADER */
+#content {clear: both; margin: 2em 0; }
+
+#wrapper{ width: 1010px; margin: 0 auto; }
+
+#logo { position: relative; width: 400px; height: 60px; background: #fff url(../img/stadt/logo_city.jpg) no-repeat center center scroll; text-indent: -9999px; float: right; z-index: 3; border: 3px #26365c solid; padding: 0.5em; -webkit-transform: rotate(3deg);/*für andere Browser */
+       -moz-transform: rotate(3deg);/* für Mozilla Browser */
+ }
+
+#bg_style { }
+
+#quad_pic { display: none; }
+
+/* NAVIGATION */
+#nav_div { position: absolute;  width: 100%; left: 0px; top: 47px; text-transform: uppercase; background: #7d869d; background: rgba(38, 54, 92, 0.6); padding: 0.5em 0; z-index: 0; font: normal normal bold 1em/1em Tahoma; color:#26365c;}
+#main_nav { width: 1010px; margin: 0 auto; }
+#main_nav ul {}
+#main_nav ul li { float:left; text-align: left; margin: 0 2.5%; list-style-type: none; text-transform: uppercase; }
+#main_nav ul li a{ background-color: transparent; color: #fff;  text-decoration: none; }
+#main_nav ul li a:hover { color: #EC681D; }
+
+
+/* HOME */
+/*#div_modelle { background: url(../img/stadt/slider_bg.jpg) no-repeat center center scroll; height: 321px;
+                  margin: 0.6em 10px 1em; padding: 0 2%; overflow: hidden; position: relative;}*/
+
+#div_modelle { width: 1010px!important;}
+#slider {}
+#slider .img_container img { display: none;  }
+
+#about_us,#support,#wir, #zeiten, #daten { width: 45%; float: right;}
+#game_div,#news, #events, #adresse, #plan {width: 45%; float: left; }
+
+#sae { clear: both; width: 1010px; height: 321px; background: url(../img/pics/sae_sw.jpg) no-repeat center center scroll; padding-top: 100px;  }
+#sae h2 {display: none;}
+
+
+
+/* MODELLE */
+#modelle_slider{ width: 1010px; height: 321px; background: url(../img/pics/landstrasse.jpg) no-repeat center center scroll; margin: 0 auto; }
+#modelle_slider li { height: 160px; overflow: hidden;  width: 25%; float:left; border: 10px #26365c solid; padding: 0.5em 1.1em; margin: 6em 0.8em 0; background: #26365c; background: rgba(38, 54, 92, 0.6); color:#eee; position: relative; }
+#modelle_slider h2 a{ padding-top: 0.6em; font: normal normal bold 0.8em/1em Tahoma; text-transform: uppercase; text-decoration:none; color: #ec681d; z-index: 5; position: relative;  }
+#modelle_slider .img_container {  }
+#modelle_slider .img_container img { position: absolute; bottom: 0; right: 0; max-width: 300px;z-index: 0; }
+
+/* ABOUT */
+#about_header { width: 1010px; min-height: 321px; background: url(../img/pics/kreuzung.jpg) no-repeat top center scroll; }
+#about_header .about { padding-top: 321px; }
+
+/* CONTACT */
+#contact_div { width: 1010px; height: 321px; background: url(../img/pics/contact.jpg) no-repeat top center scroll; }
+#contact_div form { width: 45%; margin: 0 auto 0 5%; position: relative;}
+#contact_div form ul li { margin: 0.5em 0 0;}
+#contact_div h2 { line-height: 1em; padding-top: 0.6em;}
+
+
+/* ADMIN*/
+#admin { width: 1010px; height: 321px; background: url(../img/pics/contact.jpg) no-repeat top center scroll; }
+#admin form { width: 45%; margin: 0 auto 0 5%; position: relative;}
+#admin form ul li { margin: 0.5em 2em 0;}
+#admin h2 { line-height: 1em; padding-top: 0.6em;}
+
+
+#news_anfordern { width: auto; display: inline; height: 1em; }
+
+
+
+/* CLASSES */
+
+.modell { width: 80%;  border: 10px #26365c solid; padding: 0.5em 4%; margin: 2% auto; background: #26365c; background: rgba(38, 54, 92, 0.6); color:#eee;}
+
+/*.container_2 {  width: 80%; margin: 0 auto 1.5em; }*/
+
+.overlay { height: 160px; overflow: hidden;  width: 80%; border: 10px #26365c solid; padding: 0.5em 4%; margin: 2.5em auto 0; background: #26365c; background: rgba(38, 54, 92, 0.6); color:#eee; position: relative;}
+
+.scroll { height: 183px; position: absolute; overflow: scroll; }
+/*.img_
+ { position: absolute; right: 0px; bottom: 0px; margin: 0 20px 10px 0;}*/
+
+
+#slider { width: 1010px!important; background: url(../img/stadt/slider_bg.jpg) no-repeat center center scroll; height: 321px;}
+.slide { width: 800px; height:221px; margin:40px 0 0 60px; }
+#slider-nav { display: none !important; }
+.nav-bar { position: relative; }
+.nav-bar a{ height: 1em; position: absolute; color: #26365c; }
+#prev { left: 0px; }
+#next { right: 0px;}
+
+.active_main_nav { color: #26365c!important; }
+
+.float_l {width: 45%; clear:left; float: left; }
+
+.float_r { width: 45%; position: absolute; top: 52px; right: 0px; }
+
+.after_checkbox { margin: 0 0 0 5%; }
+
+.abschicken_button { background-color: #fff; margin-top: 1em; }
+
+.highlight { border: 10px #7d869d solid!important; }
+
+.fehler, .LV_invalid  {color: #f59a26 !important; display:block; margin: 1% 4%;}
+
+/*LIVEVALIDATION*/
+.LV_valid_field{ background: #fff url(../../plugins/livevalidation/valid.png) no-repeat center right scroll; }
+
+.LV_invalid_field { background: #fff url(../../plugins/livevalidation/invalid.png) no-repeat center right scroll; }
+
+/* CONTENT SLIDER */
+.contact ul.ui-tabs-nav, .about ul.ui-tabs-nav , .quads ul.ui-tabs-nav { display: none;}
+
+footer { clear: both; width: 100%; background-color: #7d869d; }
+
+footer p { margin: 0;}
+
+#container { margin-top: 2em;}
+
+#gallery { margin-top: 2em;}

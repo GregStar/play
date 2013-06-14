@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+*{ margin: 0; padding: 0; border: none; list-style: none; }
+
+body {background-color: #fff; color:#26365c; font: font: normal normal normal 1em/1.4em Tahoma;}
+h1{ background: url('../img/logo_city.jpg') no-repeat top left scroll; ;font: normal normal bold 2em/2em Tahoma; text-transform: uppercase; text-indent: -9999px; }
+
+h2, #contact_form legend { width: 86%; margin: 6% auto 8%; position: relative; font: normal normal bold 1.4em/1.4em Tahoma; text-transform: uppercase; color: #26365c; }
+h2 a { color: #26365c; text-decoration: none; line-height: 1.5em; }
+
+h2 span { position: absolute; right: 0px;}
+h2 span a { float: right; font: italic normal normal 0.7em/1.35em Tahoma; color: #f59a26; padding: 0.6em 4% 0.6em 0; text-decoration: underline;}
+h2 span a:hover { color: #26365c; }
+
+h3 { font: normal normal normal 1.3em/1.5em Tahoma; color: #ec681d; padding: 0.2em 0; color: #26365c;}
+
+h3 a {color: #26365c!important; padding: 0!important;}
+h4 { font: normal normal bold 1em/1em Tahoma; color: #929292; padding: 0.5em; }
+
+a { color: #f59a26; font: normal normal normal 1.2em/1.2em Tahoma; cursor: pointer;}
+a:hover { color: ec681d; }
+
+p, table{ margin-bottom: 6%; }
+
+article{ margin-bottom: 2.5em; }
+article p { margin: 0.2em 0 1em;}
+article a { display: block;}
+
+time { margin: 0 1em; font: italic normal normal 0.9em/1em Tahoma; }
+
+ol li{ list-style: inside decimal; }
+
+ul:after { content:"."; clear: both; height: 0; display: block; visibility: hidden; }
+
+
+img { line-height: 0em;}
+
+fieldset { outline: none; }
+
+legend { padding: 0.5em 4% 1em; color:#361601; font: normal normal bold 1.2em/1.2em Tahoma; margin: 0.5em 1em 0;}
+
+label {display: block; position: relative; width: 100%; text-align: left;}
+
+input { height: 2em; font: normal normal normal 0.9em/1.2em "Tahoma"; text-indent: 0.8em; width:100%; }
+
+textarea { font: normal normal normal 0.9em/1.2em "Tahoma"; width: 92%; padding: 4%; height: 10.7em; } 
+
+form { text-align: left; }
+
+
+table { margin-top: 1.5em; font: normal normal normal 1em/1.3em Tahoma; width: 100%; }
+table th{ font: normal normal normal 1em/1.3em Tahoma;}
+thead { color: #26365c; font: normal normal bold 1em/1.4em Tahoma;}
+
+label {display: block; position: relative; width: 100%; text-align: left;}
+
+.label {display: block; margin: 2% 0.1em 0.4%; }
+
+.abschicken_button { background-color: #eee; font: normal normal normal 1em/1 Tahoma; display: block; margin:  0.7em 0 0; text-align: center;  text-transform: uppercase;  color: #26365c; font-weight: bold; text-decoration: none;  }
+
+#news_anfordern{ width: auto; display: inline; height: auto; margin: 4% 2% 0 4%;}
+
+.after_checkbox { margin: 4% 0 0.4em; }
+
+.fehler, .LV_invalid  {color: #f59a26!important; display:block; margin: 1% 4%;}
+
+.LV_valid_field{ background: #fff url(../../../plugins/livevalidation/valid.png) no-repeat center right scroll; }
+
+.LV_invalid_field { background: #fff url(../../../plugins/livevalidation/invalid.png) no-repeat center right scroll; }
+
+.top { font: italic normal bold 0.9em/1.35em Tahoma; color: #f59a26; padding: 0.4em 0 0.4em 7%; margin-bottom: 1em; display: block;}
+.top:hover{ color: #26365c; }
+
+.link { font: italic normal bold 1em/1.35em Tahoma; color: #26365c; display: block; } 
+.link:hover { color: #f59a26; }
+
+.em { font: normal normal bold 1em/1.45em Tahoma;}
+#wrapper { width: 94%; padding: 4% 3% 2%;}
+
+.button{ background-color: #7d869d; font: normal normal normal 1.3em/1.3 Tahoma; display: block; margin: 0.4em 0; text-align: center;  text-transform: uppercase;  color: #eee; text-decoration: none; padding: 0.3em 7%;}
+
+#main_nav a:hover { color: #ec681d;  }	
+
+.container { margin-top: 4%; overflow: hidden; background-color: #7d869d; padding: 0.5em 4%; margin: 2.5em auto 0;  color:#eee; }
+			 
+.text{  width: 86%; margin: 6% auto 8%; font: normal normal normal 1em/1.35em Tahoma; }			 
+
+footer p { font: normal normal bold 0.9em/1.15em Tahoma;  margin: 4% 0 0 0 !important;}

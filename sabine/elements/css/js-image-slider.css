@@ -1,0 +1,77 @@
+/* http://www.menucool.com */
+
+#mcis {display:none;}
+
+#sliderFrame {position:relative;/*width:1000px; */margin: 4% 4.2%;}
+
+#slider {
+    width:960px;height:300px;
+    position:relative;
+    box-shadow: 1px 1px 50px #666;
+    -moz-box-shadow: 1px 1px 50px #666;
+    -webkit-box-shadow: 1px 1px 50px #666;
+    box-shadow: 1px 1px 50px #666;
+    overflow: hidden;
+    margin:0 auto;
+}
+#slider img {
+    max-width:100%;
+    position:absolute;
+    border:none;
+    display:none;
+}
+
+/* Caption styles */
+div.mc-caption-bg, div.mc-caption-bg2 {
+    position:absolute;
+    width:100%;
+    height:auto;
+    padding:0;
+    left:0px;
+    bottom:0px;
+    z-index:3;
+    overflow:hidden;
+    font-size: 0;
+}
+div.mc-caption-bg {
+    background-color:rgb(50,50,50);
+}
+div.mc-caption {
+    font: bold 28px/32px 'SyncopateRegular', sans-serif;
+    color:#EEE;
+    z-index:4;
+    padding:5px 0;
+    text-align:center;
+}
+
+div.navBulletsWrapper {display:none;}
+
+/* --------- Others ------- */
+#slider 
+{
+    transform: translate3d(0,0,0);
+    -ms-transform:translate3d(0,0,0);
+    -moz-transform:translate3d(0,0,0);
+    -o-transform:translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}
+
+@media screen and (max-width:1680px){
+    #slider { width:850px;}
+}
+
+@media screen and (max-width:1280px){
+    #slider { width:750px;}
+    div.mc-caption {font-size: 24px; line-height:28px;}
+}
+
+@font-face {
+    font-family: 'SyncopateRegular';
+    src: url('syncopate-regular-webfont.eot');
+    src: url('syncopate-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('syncopate-regular-webfont.woff') format('woff'),
+        url('syncopate-regular-webfont.ttf') format('truetype'),
+        url('syncopate-regular-webfont.svg#SyncopateRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

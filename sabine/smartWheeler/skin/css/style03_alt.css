@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/*
+    Document   : style
+    Created on : 25.04.2011, 10:52:13
+    Author     : Sabine_d
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+*{ margin: 0; padding: 0; border: none; list-style: none; }
+
+body{ background: #66c07d url(../img/green/bg_verlauf.png) repeat-x top left scroll; color: #002d5c; font: normal normal normal 1.0em/1.3em Georgia; }
+
+header { background: url(../img/green/huegel_hinten2.png) no-repeat bottom left scroll; height: 303px; }
+
+footer { clear: both; position: relative; background: url(../img/green/gras_footer.png) no-repeat bottom center scroll; }
+
+footer p { font: normal normal normal 0.8em/1em Georgia; text-align: center; }
+
+footer p br{ display: none; }
+
+h1{ font: normal normal bold 1.6em/1.8em Verdana; text-transform: uppercase; color: #f29c01; }
+
+h2 { font: normal normal bold 1.4em/1.6em Verdana; text-transform: uppercase; color: #00631a; }
+
+h3 { font: normal normal bold 1.2em/1.2em Cabin; color: #009627; padding: 1em 1em; }
+
+h4 { font: normal normal bold 1em/1.2em Cabin; color: #f29c01; margin-top: 0.5em; }
+
+a { color: #f29c01; display: inline-block; }
+
+ol { list-style: decimal inside; }
+
+label { width: 100%; display: block; line-height: 1.5em; }
+
+article p{ margin: 0.5em; color: #002d5c; }
+
+article p a { display: block; text-align: right; padding: 0.5em; }
+
+time { font: italic normal normal 0.9em/1.1em Cabin; }
+
+fieldset ul { margin: 0.5em 0; }
+
+fieldset ul li { margin: 0 auto 3px; color: #002D5C; width: 200px; padding: 0 8%; }
+
+input { display: block; width: 98%; }
+
+textarea { font: normal normal normal 0.9em/1.2em Helvetica; padding: 7px 2px 2px 10px; width: 93%;
+           height: 6em; max-width: 186px; min-width: 186px; }
+
+#footer_div { height: 234px; background: url(../img/green/trees_rechts_footer.png) no-repeat bottom right scroll; }
+
+#footer_style01 { float: left; width: 160px; height: 233px; 
+                  background: url(../img/green/trees_links_footer.png) no-repeat bottom left scroll; }
+
+#footer_div nav { display: inline-block; text-align: right; width: 18%; text-align: left; margin-top: 61px; }
+
+#footer_div nav ul li { width: 100%; }
+
+#footer_div nav ul li a { color: #f29c01; font: normal normal normal 1em/1.5em Cabin; }
+
+#contact { position: absolute; right: 30%; bottom: 42px; display: inline-block; text-align: right; }
+
+#contact address { color: #00631a; font: normal normal bold 1.1em/1.3em Cabin; }
+
+/*#submit_button { width: 100%; color: #f29c01; font: normal normal bold 0.9em/1.1em Cabin; }*/
+
+#logo { position: absolute; top: 45px; width: 466px; height: 71px; background: url(../img/logo_standart.png) no-repeat bottom right scroll;
+        text-indent: -9999px; padding: 0 0 0 2em; z-index: 9; }
+
+#highscore ol li { padding: 2% 5%; }
+
+#highscore ol li:first-child { font-weight: bold; border: solid 2px #00631a; }
+
+#wrapper{ margin: 0 auto; width: 92%; min-width: 800px; max-width: 1400px;       
+          background: #d9efdf url(../img/green/header_clouds2.jpg) no-repeat top center scroll; position: relative; }
+
+#bg_style { background: url(../img/green/huegel_vorne2.png) no-repeat bottom right scroll; height: 273px;
+            position: relative; top: 30px; z-index: 1; }
+
+#main_nav { position: absolute; top: 0px; width: 100%; font: normal normal normal 1.4em/1.8 Helsinki; }
+
+#main_nav ul { text-align: right; position: relative; right: 0px; width: 100%; }
+
+#main_nav ul li { display: inline-block; margin: 0 3%; }
+
+#main_nav ul li a{ color: #00365c; text-decoration: none; }
+
+#main_nav ul li a:hover{ color: #ec681d; }
+
+#sub_nav { position: relative; top: 0; z-index: 2; width: 100%; height: 120%; margin: 5px 0; text-align: left;
+           background: #66c07d; background: rgba(255, 255, 255, 0.4); font: normal normal normal 1em/1.2em Cabin; }
+
+#sub_nav ul { margin: 0 auto; width: 90%; padding: 3px; max-width: 1400px; }
+
+#sub_nav a { color: #361601; text-decoration: none; display: inline; padding: 0; }
+
+#sub_nav a:before { content: '>> '; }
+
+#quad_pic { position: absolute; top: 80px; right: 1%; z-index: 3; }
+
+#content { position: relative; padding: 0.5em 2%;}
+
+#div_modelle { margin: 0 0 1.5em; }
+
+#div_modelle ul { display: block; height: 320px; }
+
+#div_modelle h2{ width: 20%; float:left; text-align: center; margin: 0.5em 0 0.5em; }
+
+#container { clear: both; position: relative; margin: 3em 2%; }
+
+#container h2 { border-bottom: #00631a solid 1px; padding: 1%; text-align: center; }
+
+#container p, #container ol { margin: 0.8em 0.5em; }
+
+#container a { margin: 0 0.5em 0.3em; padding: 0.3em 0.5em; display: block; text-align: center; background: #d9efdf; }
+
+#container p a { display: inline; margin: 0; padding: 0; color: #f29c01; border: none; background: none; }
+
+#articel, #anfahrt, #contact_div { width: 29%; margin: 1em 1.7%; display: inline-block; }
+
+#articel { float: right; }
+
+#articel div { margin-bottom: 3em; }
+
+#articel ul li { list-style-image: url(../img/green/item_orange_flower2.png); list-style-position: outside; margin: 0.5em 0 0 1.5em; }
+
+#contact_div { clear: both; float: left; background: #edffed; background: rgba(255, 255, 255, 0.6); padding-bottom: 1em; }
+
+#contact_div legend { padding: 7% 10% 0; color: #f29c01; }
+
+#contact_form { clear: left; float: left; display: inline-block; width: 100%; position: relative; }
+
+#home_anfahrt { float: left; position: relative; }
+
+#home_anfahrt p { margin: 0.5em 2em; }
+
+#home_anfahrt a { display: block; text-align: right; padding: 0.5em 3%; }
+
+#anfahrtsplan{ text-align: right; margin: 5% 0 3%; }
+
+#navi_newsletter { display: none !important; }
+
+#elemente { padding: 1em 3em; }
+
+#elemente hr { background: #361601; color:  #361601; height: 1px; }
+
+#elemente p { padding: 0.5em 1em; }
+
+#elemente ol{ list-style: decimal inside; padding: 0.5em; }
+
+#elemente ul { list-style: disc inside; padding: 0.5em; }
+
+#elemente form ul { list-style: none; }
+
+#elemente form ul li{ margin: 3px 2em; padding: 0.5em; text-align: left; }
+
+#elemente legend { font: normal normal bold 1.2em/1.5em Georgia; color: #f29c01; padding: 0 1em; }
+
+#elemente form p { padding: 0.2em 1em; }
+
+
+#radio input, #check input{ padding-top: 0.7em; }
+
+#radio input, #check input { width: auto; display: inline; margin: 0.5em; }
+
+#select{ display: block; margin: 0.5em; }
+
+#elemente img { margin: 1.5em; }
+
+.kampagne_active { width: 60%; padding: 1.5em 2em; margin: 0 3% 1em 3%; color: #00365c;
+                   float:right; background: #e9ffe9; background: rgba(255, 255, 255, 0.5); 
+                   -moz-box-shadow: 0 0 10px 5px #697f69; -webkit-box-shadow: 0 0 10px 5px #697f69; box-shadow: 0 0 10px 5px #697f698;
+                  /* -webkit-box-shadow: -5px 5px 5px #697f69; -moz-box-shadow: -5px 5px 5px #697f69; box-shadow: -5px 5px 5px #697f69;*/
+                   /*-webkit-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5); box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);*/ }
+
+.kampagne_active h3 { font-size: 1.6em; line-height: 2em; text-transform: uppercase; }
+
+.kampagne_active img { display: inline-block; float: right; width: auto; }
+
+.kampagne_active p { float: left; width: 41%; margin: 0.5em 3%; font: normal normal normal 1.1em/1.4em Georgia; }
+
+.kampagne_active a { margin: 1em 1em 0; color: #00365c; font: normal normal bold 1.2em/1.2em Georgia; 
+                     text-decoration: none; display: inline-block; }
+
+.kampagne_active a:before { content: '>> '; color: #f29c01; }
+
+.kampagne_hidden { clear:left; padding: 0 0 0 0; margin: 0 0 0 0;
+                   list-style-image: url(../img/green/item_orange_flower2.png); list-style-position: inside; }
+
+.kampagne_hidden p, .kampagne_hidden img { display: none; }
+
+.kampagne_hidden h3 {/* display: inline-block;*/ margin: 0.5em 0; }
+
+.link_slider { display: none; }
+
+.clear:after{ content:"."; display: block; height: 0; visibility: hidden; clear: both; }
+
+.sub_navi_link{ text-transform:capitalize; }
+
+.city_slider_active, .city_slider_hidden { color: #002d5c; background: #e9ffe9; background: rgba(255, 255, 255, 0.5);
+                                           width: 22%; float: left; display: inline-block; padding: 1%; margin: 0 0.5% 2em;
+                                           -moz-box-shadow: 0 0 10px 5px #697f69; -webkit-box-shadow: 0 0 10px 5px #697f69; box-shadow: 0 0 10px 5px #697f698; }
+
+.abschicken_button { width: 100% !important; font: normal normal bold 1em/1.2em Georgia;
+                     text-transform: uppercase; text-align: center; color: #002d5c; }
